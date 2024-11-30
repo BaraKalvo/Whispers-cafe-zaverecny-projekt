@@ -3,11 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whispers cafe</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Whispers café</title>
+
 </head>
+
 <body>
-    
+
+    <header class="header">
+        <div class="logo">
+            <img class="logo__image" src="images/logo.svg" alt="logo Whispers café" width: 200 />
+        </div>
+
+        <div class="menu">
+        <!-- přijde doplnit menu -->
+        </div>
+    </header>
+
+    <section class="hero">
+
+        <div class="hero__text">
+            <h1 class="hero__heading">café &amp; bistro</h1>
+            <p class="hero__subheading">kde můžete zastavit</p>
+        </div>
+
+        <div class="hero__buttons-wrapper">
+            <a class="button" href="#">Rezervace</a>
+            <a class="button" href="#">Naše nabídka</a>
+        </div>
+
+    </section>
+
+    <section class="info-line">
+        <p class="info-line__text">Otevřeno po-so 8:00-21:00, ne 8:00-19:00</p>
+    </section>
+
+    <!-- do main si zabalím to, čemu pak budu chtít omezit šířku obsahu-->
+    <div class="main">
+
+        <section class="grid-content">
+            <div class="grid-content__column-third">
+                <img class="grid-content__image" src="images/image-o-nas.jpg" alt="Servírování capuccina" />
+            </div>
+
+            <div class="grid-content__column-two-thirds">
+
+                <h2>O nás</h2> <!-- dořešit třídy u nadpisů!-->
+
+                <p class="grid-content__text">Odpočinek, klid, zastavení.</p>
+
+                <p class="grid-content__text">Přímo v srdci města najdete naši útulnou kavárnu, která doslova vybízí, abyste na okamžik zpomalili a vychutnali si chvíli klidu a pohody. Každé ráno tu připravujeme vynikající snídaně a brunche, které potěší každého, kdo miluje dobré jídlo. Naše nabídka kávy a pokrmů není jen o jídle, ale o zážitku, který si můžete vychutnat v poklidné atmosféře. Věříme, že kvalitní suroviny přispívají k výborné chuti našich pokrmů a dělají z každého sousta opravdovou delikatesu.</p>
+
+                <p class="grid-content__text">Kromě skvělých jídel a nápojů nabízíme také unikátní prostor quiet zone. Tento klidný kout je ideální pro všechny, kdo hledají tiché místo pro práci, studium nebo četbu. S pohodlnými sedačkami a jemným osvětlením si zde každý může vytvořit vlastní koutek pro soustředění. Atmosféra je navržena tak, aby podporovala kreativitu a relaxaci, což z naší kavárny činí perfektní útočiště pro každého, kdo si chce na chvíli odpočinout od ruchu města.</p>
+
+                <a class="button" href="#">Více o Quiet zone</a>
+
+            </div>
+        </section>
+
+        <section class="pictograms-wrapper">
+            <div class="pictogram">
+                <img class="pictogram__image" src="images/snidane-brunch.svg" />
+                <p class="pictogram__text">Snídaně a brunch</p>
+            </div>
+
+            <div class="pictogram">
+                <img class="pictogram__image" src="images/menu.svg" />
+                <p class="pictogram__text">Polední menu</p>
+            </div>
+
+            <div class="pictogram">
+                <img class="pictogram__image" src="images/kava.svg" />
+                <p class="pictogram__text">Výběrová káva</p>
+            </div>
+
+            <div class="pictogram">
+                <img class="pictogram__image" src="images/dezerty.svg" />
+                <p class="pictogram__text">Vlastní dezerty</p>
+            </div>
+
+            <div class="pictogram">
+                <img class="pictogram__image" src="images/quiet-zone.svg" />
+                <p class="pictogram__text">Quiet zone</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <img class="gallery__image" src="images/cafe-gallery-1.jpg" alt="Interiér kavárny" />
+            <img class="gallery__image" src="images/cafe-gallery-2.jpg" alt="Příprava kávy" />
+            <img class="gallery__image" src="images/cafe-gallery-3.jpg" alt="Interiér kavárny" />
+        </section>
+
+        <section class="review-wrapper">
+            <h3>Hodnocení hostů</h3> <!-- dořešit třídy u nadpisů!-->
+            <h2>Co o nás hosté říkají</h2> <!-- dořešit třídy u nadpisů!-->
+
+            <div class="review">
+                <img class="review_image" src="images/stars-review.svg" alt="Hvězdičky k hodnocení kavárny" />
+                <p class="review__quote">„Dokonalý brunch.“</p>
+                <p class="review__name">Pavel Novák</p>
+                <a class="review__link" href="#" target="_blank">Google recenze</a>
+            </div>
+
+            <div class="review">
+                <img class="review_image" src="images/stars-review.svg" alt="Hvězdičky k hodnocení kavárny" />
+                <p class="review__quote">„Skvělé místo s ještě skvělejší atmosférou.“</p>
+                <p class="review__name">Jana Odborná</p>
+                <a class="review__link" href="#" target="_blank">Google recenze</a>
+            </div>
+
+            <div class="review">
+                <img class="review_image" src="images/stars-review.svg" alt="Hvězdičky k hodnocení kavárny" />
+                <p class="review__quote">„Na snídani už nikam jinam.“</p>
+                <p class="review__name">Martina Nasycená</p>
+                <a class="review__link" href="#" target="_blank">Google recenze</a>
+            </div>
+
+            <div class="review">
+                <img class="review_image" src="images/stars-review.svg" alt="Hvězdičky k hodnocení kavárny" />
+                <p class="review__quote">„Díky, že jste.“</p>
+                <p class="review__name">Karel Kávurád</p>
+                <a class="review__link" href="#" target="_blank">Google recenze</a>
+            </div>
+
+        </section>
+
+    </div>
+
+        <section class="grid-footer">
+
+            <div class="grid-footer__follow"> <!-- možná by všem sloupcům šla dát jedna třída - to stylování bude stejné-->
+                <h2>Sledujte nás</h2>
+                <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/facebook.svg" alt="ikona Facebooku" /></a>
+                <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/instagram.svg" alt="ikona Instagramu" /></a>
+                <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/twitter.svg" alt="ikonka Twitteru" /></a>
+            </div>
+
+            <div class="grid-footer__contact">
+                <h2>Kontaktujte nás</h2>
+                <ul class="grid-footer__contact-list">
+                    <li class="grid-footer__contact-item">+420 111 111 111</li>
+                    <li class="grid-footer__contact-item"><a class="grid-footer__item-link grid-footer__item-link--mail" href="#" target="_blank">whispers@cafe.cz</a></li>
+                    <li class="grid-footer__contact-item"><a class="grid-footer__item-link grid-footer__item-link--messenger" href="#" target="_blank">Messenger</a></li>
+                </ul>
+            </div>
+
+            <div class="grid-footer__hashtag">
+                <h2>Chutnalo Vám u nás?</h2>
+                <p class="grid-footer__text">Budeme rádi, když fotku, kterou jste u nás pořídili, označíte hashtagem <a href="#" target="_blank">#whisperscafe</a></p>
+           </div>
+
+        </section>
+
+        <footer class="footer">
+            <p class="footer__text">&copy;2024 whisperscafe.cz</p>
+        </footer>
+ 
+
+
+   
 </body>
 </html>

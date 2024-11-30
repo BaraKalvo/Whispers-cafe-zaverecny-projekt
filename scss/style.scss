@@ -1,0 +1,36 @@
+/* 
+barvy
+
+zelená: #6B856F $c-primary
+logo + menu: #A0A0A0 $c-secondary
+text: #282425 $c-text
+šedý proužek: #D9D9D9 $c-medium
+světlá patička: #EFEBEB $c-light
+šedý rámeček v kontaktech: #757575 $c-dark
+
+
+písmo
+
+text: Raleway
+font-family: "Raleway", serif;
+font-optical-sizing: auto;
+
+nadpisy: Playfair Display
+font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+
+*/
+
+$c-primary: #6B856F;
+$c-secondary: #A0A0A0;
+$c-light: #EFEBEB;
+$c-medium: #D9D9D9;
+$c-dark: #757575;
+$c-text: #282425;
+
+$font-base: 'Raleway', sans-serif;
+$font-special: 'Playfair Display', serif;
+
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
