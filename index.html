@@ -32,28 +32,28 @@
             <p class="hero__subheading">kde můžete zastavit</p>
         </div>
 
-        <div class="hero__buttons-wrapper">
-            <a class="button" href="#">Rezervace</a>
-            <a class="button" href="#">Naše nabídka</a>
-        </div>
+        <ul class="hero__buttons-wrapper">
+            <li class="button padding-bottom-small"><a class="button__link" href="#">Rezervace</a></li>
+            <li class="button"><a class="button__link" href="#">Naše nabídka</a></li>
+        </ul>
 
     </section>
 
     <section class="info-line">
-        <p class="info-line__text">Otevřeno po-so 8:00-21:00, ne 8:00-19:00</p>
+        <p class="info-line__text margin0 padding-big">Otevřeno po-so 8:00-21:00, ne 8:00-19:00</p>
     </section>
 
     <!-- do main si zabalím to, čemu pak budu chtít omezit šířku obsahu-->
     <div class="main">
 
-        <section class="grid-content">
-            <div class="grid-content__column-third">
-                <img class="grid-content__image" src="images/image-o-nas.jpg" alt="Servírování capuccina" />
+        <section class="grid">
+            <div class="grid__image column-third">
+                <img class="grid__photo border" src="images/image-o-nas.jpg" alt="Servírování capuccina" />
             </div>
 
-            <div class="grid-content__column-two-thirds">
+            <div class="grid__content column-two-thirds">
 
-                <h2>O nás</h2> <!-- dořešit třídy u nadpisů!-->
+                <h2>~ O nás ~</h2> <!-- dořešit třídy u nadpisů!-->
 
                 <p class="grid-content__text">Odpočinek, klid, zastavení.</p>
 
@@ -61,35 +61,37 @@
 
                 <p class="grid-content__text">Kromě skvělých jídel a nápojů nabízíme také unikátní prostor quiet zone. Tento klidný kout je ideální pro všechny, kdo hledají tiché místo pro práci, studium nebo četbu. S pohodlnými sedačkami a jemným osvětlením si zde každý může vytvořit vlastní koutek pro soustředění. Atmosféra je navržena tak, aby podporovala kreativitu a relaxaci, což z naší kavárny činí perfektní útočiště pro každého, kdo si chce na chvíli odpočinout od ruchu města.</p>
 
-                <a class="button" href="#">Více o Quiet zone</a>
+                <div class="button button--position">
+                    <a class="button__link button__link--color-shadow margin-small" href="#">Více o Quiet zone</a>
+                </div>
 
             </div>
         </section>
 
         <section class="pictograms-wrapper">
-            <div class="pictogram">
-                <img class="pictogram__image" src="images/snidane-brunch.svg" />
-                <p class="pictogram__text">Snídaně a brunch</p>
+            <div class="pictogram padding-small">
+                <img class="pictogram__image padding-bottom-XS" src="images/snidane-brunch.svg" />
+                <p class="text-small margin0">Snídaně a brunch</p>
             </div>
 
-            <div class="pictogram">
-                <img class="pictogram__image" src="images/menu.svg" />
-                <p class="pictogram__text">Polední menu</p>
+            <div class="pictogram padding-small">
+                <img class="pictogram__image padding-bottom-XS" src="images/menu.svg" />
+                <p class="text-small margin0">Polední menu</p>
             </div>
 
-            <div class="pictogram">
-                <img class="pictogram__image" src="images/kava.svg" />
-                <p class="pictogram__text">Výběrová káva</p>
+            <div class="pictogram padding-small">
+                <img class="pictogram__image padding-bottom-XS" src="images/kava.svg" />
+                <p class="text-small margin0">Výběrová káva</p>
             </div>
 
-            <div class="pictogram">
-                <img class="pictogram__image" src="images/dezerty.svg" />
-                <p class="pictogram__text">Vlastní dezerty</p>
+            <div class="pictogram padding-small">
+                <img class="pictogram__image padding-bottom-XS" src="images/dezerty.svg" />
+                <p class="text-small margin0">Vlastní dezerty</p>
             </div>
 
-            <div class="pictogram">
-                <img class="pictogram__image" src="images/quiet-zone.svg" />
-                <p class="pictogram__text">Quiet zone</p>
+            <div class="pictogram padding-small">
+                <img class="pictogram__image padding-bottom-XS" src="images/quiet-zone.svg" />
+                <p class="text-small margin0">Quiet zone</p>
             </div>
         </section>
 
@@ -99,73 +101,74 @@
             <img class="gallery__image" src="images/cafe-gallery-3.jpg" alt="Interiér kavárny" />
         </section>
 
-        <section class="review-wrapper">
+        <section class="review-container">
             <h3>Hodnocení hostů</h3> <!-- dořešit třídy u nadpisů!-->
             <h2>Co o nás hosté říkají</h2> <!-- dořešit třídy u nadpisů!-->
 
-            <div class="review">
-                <img class="review_image" src="images/stars-review.svg" alt="Hvězdičky k hodnocení kavárny" />
-                <p class="review__quote">„Dokonalý brunch.“</p>
-                <p class="review__name">Pavel Novák</p>
-                <a class="review__link" href="#" target="_blank">Google recenze</a>
-            </div>
+            <div class="review-wrapper">
+                <div class="review padding-small">
+                    <img class="review__image" src="images/stars-review.svg" alt="Hvězdičky k hodnocení kavárny" />
+                    <p class="review__quote">„Dokonalý brunch.“</p>
+                    <p class="text-small margin-XS">Pavel Novák</p>
+                    <a class="review__link" href="#" target="_blank">Google recenze</a>
+                </div>
 
-            <div class="review">
-                <img class="review_image" src="images/stars-review.svg" alt="Hvězdičky k hodnocení kavárny" />
-                <p class="review__quote">„Skvělé místo s ještě skvělejší atmosférou.“</p>
-                <p class="review__name">Jana Odborná</p>
-                <a class="review__link" href="#" target="_blank">Google recenze</a>
-            </div>
+                <div class="review padding-small">
+                    <img class="review_image" src="images/stars-review.svg" alt="Hvězdičky k hodnocení kavárny" />
+                    <p class="review__quote">„Skvělé místo s ještě skvělejší atmosférou.“</p>
+                    <p class="text-small margin-XS">Jana Odborná</p>
+                    <a class="review__link" href="#" target="_blank">Google recenze</a>
+                </div>
 
-            <div class="review">
-                <img class="review_image" src="images/stars-review.svg" alt="Hvězdičky k hodnocení kavárny" />
-                <p class="review__quote">„Na snídani už nikam jinam.“</p>
-                <p class="review__name">Martina Nasycená</p>
-                <a class="review__link" href="#" target="_blank">Google recenze</a>
-            </div>
+                <div class="review padding-small">
+                    <img class="review_image" src="images/stars-review.svg" alt="Hvězdičky k hodnocení kavárny" />
+                    <p class="review__quote">„Na snídani už nikam jinam.“</p>
+                    <p class="text-small margin-XS">Martina Nasycená</p>
+                    <a class="review__link" href="#" target="_blank">Google recenze</a>
+                </div>
 
-            <div class="review">
-                <img class="review_image" src="images/stars-review.svg" alt="Hvězdičky k hodnocení kavárny" />
-                <p class="review__quote">„Díky, že jste.“</p>
-                <p class="review__name">Karel Kávurád</p>
-                <a class="review__link" href="#" target="_blank">Google recenze</a>
+                <div class="review padding-small">
+                    <img class="review_image" src="images/stars-review.svg" alt="Hvězdičky k hodnocení kavárny" />
+                    <p class="review__quote">„Díky, že jste.“</p>
+                    <p class="text-small margin-XS">Karel Kávurád</p>
+                    <a class="review__link" href="#" target="_blank">Google recenze</a>
+                </div>
             </div>
 
         </section>
 
     </div>
 
-        <section class="grid-footer">
+        <section class="grid-footer-wrapper">
 
-            <div class="grid-footer__follow"> <!-- možná by všem sloupcům šla dát jedna třída - to stylování bude stejné-->
-                <h2>Sledujte nás</h2>
-                <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/facebook.svg" alt="ikona Facebooku" /></a>
-                <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/instagram.svg" alt="ikona Instagramu" /></a>
-                <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/twitter.svg" alt="ikonka Twitteru" /></a>
+            <div class="grid-footer column-third padding-small">
+                <h3>Sledujte nás</h3>
+                <div class="grid-footer__follow">
+                    <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/facebook.svg" alt="ikona Facebooku" width="44" height="44" /></a>
+                    <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/instagram.svg" alt="ikona Instagramu" width="44" height="44"/></a>
+                    <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/twitter.svg" alt="ikonka Twitteru" width="47" height="47" /></a>
+                </div>
             </div>
 
-            <div class="grid-footer__contact">
-                <h2>Kontaktujte nás</h2>
-                <ul class="grid-footer__contact-list">
-                    <li class="grid-footer__contact-item">+420 111 111 111</li>
-                    <li class="grid-footer__contact-item"><a class="grid-footer__item-link grid-footer__item-link--mail" href="#" target="_blank">whispers@cafe.cz</a></li>
-                    <li class="grid-footer__contact-item"><a class="grid-footer__item-link grid-footer__item-link--messenger" href="#" target="_blank">Messenger</a></li>
+            <div class="grid-footer column-third padding-small">
+                <h3>Kontaktujte nás</h3>
+                <ul class="grid-footer__contact-list margin0">
+                    <li class="grid-footer__contact-item padding-bottom-XS"><span class="grid-footer__item-link grid-footer__item-link--tel">+420 111 111 111</span></li>
+                    <li class="grid-footer__contact-item padding-bottom-XS"><a class="grid-footer__item-link grid-footer__item-link--mail" href="#" target="_blank">whispers@cafe.cz</a></li>
+                    <li class="grid-footer__contact-item padding-bottom-XS"><a class="grid-footer__item-link grid-footer__item-link--messenger" href="#" target="_blank">Messenger</a></li>
                 </ul>
             </div>
 
-            <div class="grid-footer__hashtag">
-                <h2>Chutnalo Vám u nás?</h2>
+            <div class="grid-footer column-third padding-small">
+                <h3>Chutnalo Vám u nás?</h3>
                 <p class="grid-footer__text">Budeme rádi, když fotku, kterou jste u nás pořídili, označíte hashtagem <a href="#" target="_blank">#whisperscafe</a></p>
            </div>
 
         </section>
 
-        <footer class="footer">
-            <p class="footer__text">&copy;2024 whisperscafe.cz</p>
+        <footer class="main-footer">
+            <p class="main-footer__text margin0 padding-big">&copy;2024 whisperscafe.cz</p>
         </footer>
  
-
-
-   
 </body>
 </html>
