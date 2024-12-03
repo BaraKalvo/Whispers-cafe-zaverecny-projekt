@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="css_js/glide.core.min.css">
+    <link rel="stylesheet" href="css_js/glide.theme.min.css">
+
     <title>Whispers café</title>
 
 </head>
@@ -25,11 +28,11 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero padding-big">
 
         <div class="hero__text">
             <h1 class="hero__heading">café &amp; bistro</h1>
-            <p class="hero__subheading">kde můžete zastavit</p>
+            <p class="hero__subheading margin-XS">kde můžete zastavit</p>
         </div>
 
         <ul class="hero__buttons-wrapper">
@@ -66,6 +69,7 @@
                 </div>
 
             </div>
+
         </section>
 
         <section class="pictograms-wrapper">
@@ -96,14 +100,52 @@
         </section>
 
         <section class="gallery">
-            <img class="gallery__image" src="images/cafe-gallery-1.jpg" alt="Interiér kavárny" />
-            <img class="gallery__image" src="images/cafe-gallery-2.jpg" alt="Příprava kávy" />
-            <img class="gallery__image" src="images/cafe-gallery-3.jpg" alt="Interiér kavárny" />
+
+            <div class="glide">
+
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide"><img class="glide__image border" src="images/cafe-gallery-1.jpg" alt="Interiér kavárny" /></li>
+                    <li class="glide__slide"><img class="glide__image border" src="images/cafe-gallery-2.jpg" alt="Příprava kávy" /></li>
+                    <li class="glide__slide"><img class="glide__image border" src="images/cafe-gallery-3.jpg" alt="Interiér kavárny" /></li>
+                    <li class="glide__slide"><img class="glide__image border" src="images/cafe-gallery-4.jpg" alt="Interiér kavárny" /></li>
+                    <li class="glide__slide"><img class="glide__image border" src="images/cafe-gallery-5.jpg" alt="Interiér kavárny" /></li>
+                    <li class="glide__slide"><img class="glide__image border" src="images/cafe-gallery-6.jpg" alt="Interiér kavárny" /></li>
+                  </ul>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&lt;&lt;</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&gt;&gt;</button>
+                </div>
+
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                    <button class="glide__bullet" data-glide-dir="=4"></button>
+                    <button class="glide__bullet" data-glide-dir="=5"></button>
+                </div>
+
+            </div>
+            
+            <script src="glide.min.js"></script>
+
+            <script>
+            new Glide('.glide', {
+                autoplay: 4000,
+                type: 'carousel'
+            }
+
+            ).mount()
+            </script>
+            
         </section>
 
         <section class="review-container">
-            <h3>Hodnocení hostů</h3> <!-- dořešit třídy u nadpisů!-->
-            <h2>Co o nás hosté říkají</h2> <!-- dořešit třídy u nadpisů!-->
+            <h3>Hodnocení hostů</h3> 
+            <h2>Co o nás hosté říkají</h2>
 
             <div class="review-wrapper">
                 <div class="review padding-small">
@@ -139,10 +181,10 @@
 
     </div>
 
-        <section class="grid-footer-wrapper">
+        <section class="grid-footer-wrapper padding-bottom-small">
 
             <div class="grid-footer column-third padding-small">
-                <h3>Sledujte nás</h3>
+                <h3 class="h3--color">Sledujte nás</h3>
                 <div class="grid-footer__follow">
                     <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/facebook.svg" alt="ikona Facebooku" width="44" height="44" /></a>
                     <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/instagram.svg" alt="ikona Instagramu" width="44" height="44"/></a>
@@ -151,7 +193,7 @@
             </div>
 
             <div class="grid-footer column-third padding-small">
-                <h3>Kontaktujte nás</h3>
+                <h3 class="h3--color">Kontaktujte nás</h3>
                 <ul class="grid-footer__contact-list margin0">
                     <li class="grid-footer__contact-item padding-bottom-XS"><span class="grid-footer__item-link grid-footer__item-link--tel">+420 111 111 111</span></li>
                     <li class="grid-footer__contact-item padding-bottom-XS"><a class="grid-footer__item-link grid-footer__item-link--mail" href="#" target="_blank">whispers@cafe.cz</a></li>
@@ -160,8 +202,8 @@
             </div>
 
             <div class="grid-footer column-third padding-small">
-                <h3>Chutnalo Vám u nás?</h3>
-                <p class="grid-footer__text">Budeme rádi, když fotku, kterou jste u nás pořídili, označíte hashtagem <a href="#" target="_blank">#whisperscafe</a></p>
+                <h3 class="h3--color">Chutnalo Vám u nás?</h3>
+                <p class="grid-footer__text margin0">Budeme rádi, když fotku, kterou jste u nás pořídili, označíte hashtagem <a href="#" target="_blank">#whisperscafe</a></p>
            </div>
 
         </section>

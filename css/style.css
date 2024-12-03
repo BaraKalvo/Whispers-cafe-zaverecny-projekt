@@ -58,6 +58,10 @@ h3 {
   font-size: 1.1rem;
 }
 
+.h3--color {
+  color: #6B856F;
+}
+
 a {
   color: #6B856F;
 }
@@ -101,16 +105,21 @@ a {
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background: #282425 url(./../images/image-hero.jpg) no-repeat center/cover;
   color: white;
   width: 100%;
   height: 80vh;
-  padding-top: 30vh;
-  padding-left: 10vw;
   font-size: 1.5rem;
 }
 .hero__heading {
   margin-bottom: 0;
+  text-shadow: 1px 1px 1px #282425;
+}
+.hero__subheading {
+  text-shadow: 1px 1px 1px #282425;
 }
 .hero__buttons-wrapper {
   padding: 0;
@@ -132,6 +141,7 @@ a {
   text-transform: uppercase;
   border: 2px solid #A0A0A0;
   border-radius: 2px;
+  font-size: 1.2rem;
 }
 .button__link:hover, .button__link:focus, .button__link:active {
   background-color: #D9D9D9;
@@ -150,10 +160,13 @@ a {
   font-size: 1.25rem;
 }
 
+.grid__image {
+  max-width: 350px;
+  margin: 20px auto;
+}
 .grid__photo {
   width: 100%;
 }
-
 .grid__content {
   padding: 0 40px;
 }
@@ -189,10 +202,11 @@ a {
   justify-content: space-around;
 }
 .grid-footer__icon {
-  flex-basis: 1 1 calc((100% - 20px) / 3);
+  flex: 1 1 calc((100% - 20px) / 3);
 }
 .grid-footer__contact-list {
   list-style: none;
+  padding: 0;
 }
 .grid-footer__item-link {
   padding-left: 1.5em;
@@ -219,4 +233,11 @@ a {
 .main-footer__text {
   color: white;
   text-align: center;
+}
+
+.glide__image {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
