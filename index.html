@@ -19,13 +19,24 @@
 <body>
 
     <header class="header">
-        <div class="logo">
-            <img class="logo__image" src="images/logo.svg" alt="logo Whispers café" width: 200 />
-        </div>
+    
+        <img class="logo-image" src="images/logo.svg" alt="logo Whispers café" width="220" />
 
-        <div class="menu">
-        <!-- přijde doplnit menu -->
-        </div>
+        <nav class="menu">
+        
+            <input type="checkbox" class="menu__checkbox" id="menu-checkbox" />
+		    <label for="menu-checkbox" class="menu__toggler"><img src="images/hamburger-menu.svg" alt="rozbalovací menu" /></label>
+
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="#">Domů</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Stálá nabídka</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Polední menu</a></li>
+                <li class="menu__item menu__item--highlight"><a class="menu__link menu__link--highlight" href="#">Rezervace</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Kontakt</a></li>
+            </ul>
+
+        </nav>
+
     </header>
 
     <section class="hero padding-big">
@@ -36,21 +47,23 @@
         </div>
 
         <ul class="hero__buttons-wrapper">
-            <li class="button padding-bottom-small"><a class="button__link" href="#">Rezervace</a></li>
-            <li class="button"><a class="button__link" href="#">Naše nabídka</a></li>
+            <li class="button padding-bottom-small"><a class="button__link button--size" href="#">Rezervace</a></li>
+            <li class="button"><a class="button__link button--size" href="#">Naše nabídka</a></li>
         </ul>
 
     </section>
 
-    <section class="info-line">
-        <p class="info-line__text margin0 padding-big">Otevřeno po-so 8:00-21:00, ne 8:00-19:00</p>
+    <section class="info-line-container">
+        <div class="info-line content-width center">
+            <p class="info-line__text margin0 padding-big">Otevřeno po-so 8:00-21:00, ne 8:00-19:00</p>
+        </div>
     </section>
 
     <!-- do main si zabalím to, čemu pak budu chtít omezit šířku obsahu-->
     <div class="main">
 
-        <section class="grid">
-            <div class="grid__image column-third">
+        <section class="grid padding-big content-width center">
+            <div class="grid__image column-one-third">
                 <img class="grid__photo border" src="images/image-o-nas.jpg" alt="Servírování capuccina" />
             </div>
 
@@ -72,29 +85,29 @@
 
         </section>
 
-        <section class="pictograms-wrapper">
+        <section class="pictograms-wrapper padding-bottom-small content-width center">
             <div class="pictogram padding-small">
-                <img class="pictogram__image padding-bottom-XS" src="images/snidane-brunch.svg" />
+                <img class="pictogram__image padding-bottom-XS" src="images/snidane-brunch.svg" height="50" />
                 <p class="text-small margin0">Snídaně a brunch</p>
             </div>
 
             <div class="pictogram padding-small">
-                <img class="pictogram__image padding-bottom-XS" src="images/menu.svg" />
+                <img class="pictogram__image padding-bottom-XS" src="images/menu.svg" height="50" />
                 <p class="text-small margin0">Polední menu</p>
             </div>
 
             <div class="pictogram padding-small">
-                <img class="pictogram__image padding-bottom-XS" src="images/kava.svg" />
+                <img class="pictogram__image padding-bottom-XS" src="images/kava.svg" height="50" />
                 <p class="text-small margin0">Výběrová káva</p>
             </div>
 
             <div class="pictogram padding-small">
-                <img class="pictogram__image padding-bottom-XS" src="images/dezerty.svg" />
+                <img class="pictogram__image padding-bottom-XS" src="images/dezerty.svg" height="50" />
                 <p class="text-small margin0">Vlastní dezerty</p>
             </div>
 
             <div class="pictogram padding-small">
-                <img class="pictogram__image padding-bottom-XS" src="images/quiet-zone.svg" />
+                <img class="pictogram__image padding-bottom-XS" src="images/quiet-zone.svg" height="50" />
                 <p class="text-small margin0">Quiet zone</p>
             </div>
         </section>
@@ -135,7 +148,8 @@
             <script>
             new Glide('.glide', {
                 autoplay: 4000,
-                type: 'carousel'
+                type: 'carousel',
+            
             }
 
             ).mount()
@@ -143,33 +157,33 @@
             
         </section>
 
-        <section class="review-container">
+        <section class="review-container content-width center">
             <h3>Hodnocení hostů</h3> 
             <h2>Co o nás hosté říkají</h2>
 
             <div class="review-wrapper">
-                <div class="review padding-small">
+                <div class="review padding-big">
                     <img class="review__image" src="images/stars-review.svg" alt="Hvězdičky k hodnocení kavárny" />
                     <p class="review__quote">„Dokonalý brunch.“</p>
                     <p class="text-small margin-XS">Pavel Novák</p>
                     <a class="review__link" href="#" target="_blank">Google recenze</a>
                 </div>
 
-                <div class="review padding-small">
+                <div class="review padding-big">
                     <img class="review_image" src="images/stars-review.svg" alt="Hvězdičky k hodnocení kavárny" />
                     <p class="review__quote">„Skvělé místo s ještě skvělejší atmosférou.“</p>
                     <p class="text-small margin-XS">Jana Odborná</p>
                     <a class="review__link" href="#" target="_blank">Google recenze</a>
                 </div>
 
-                <div class="review padding-small">
+                <div class="review padding-big">
                     <img class="review_image" src="images/stars-review.svg" alt="Hvězdičky k hodnocení kavárny" />
                     <p class="review__quote">„Na snídani už nikam jinam.“</p>
                     <p class="text-small margin-XS">Martina Nasycená</p>
                     <a class="review__link" href="#" target="_blank">Google recenze</a>
                 </div>
 
-                <div class="review padding-small">
+                <div class="review padding-big">
                     <img class="review_image" src="images/stars-review.svg" alt="Hvězdičky k hodnocení kavárny" />
                     <p class="review__quote">„Díky, že jste.“</p>
                     <p class="text-small margin-XS">Karel Kávurád</p>
@@ -181,30 +195,33 @@
 
     </div>
 
-        <section class="grid-footer-wrapper padding-bottom-small">
+        <section class="footer-line-container margin0">
+        
+            <div class="grid-footer-wrapper padding-bottom-small content-width center">
 
-            <div class="grid-footer column-third padding-small">
-                <h3 class="h3--color">Sledujte nás</h3>
-                <div class="grid-footer__follow">
-                    <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/facebook.svg" alt="ikona Facebooku" width="44" height="44" /></a>
-                    <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/instagram.svg" alt="ikona Instagramu" width="44" height="44"/></a>
-                    <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/twitter.svg" alt="ikonka Twitteru" width="47" height="47" /></a>
+                <div class="grid-footer column-first padding-small">
+                    <h3 class="h3--color">Sledujte nás</h3>
+                    <div class="grid-footer__follow">
+                        <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/facebook.svg" alt="ikona Facebooku" width="44" height="44" /></a>
+                        <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/instagram.svg" alt="ikona Instagramu" width="44" height="44"/></a>
+                        <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/twitter.svg" alt="ikonka Twitteru" width="47" height="47" /></a>
+                    </div>
+                </div>
+
+                <div class="grid-footer column-second padding-small">
+                    <h3 class="h3--color">Kontaktujte nás</h3>
+                    <ul class="grid-footer__contact-list margin0">
+                        <li class="grid-footer__contact-item padding-bottom-XS"><span class="grid-footer__item-link grid-footer__item-link--tel">+420 111 111 111</span></li>
+                        <li class="grid-footer__contact-item padding-bottom-XS"><a class="grid-footer__item-link grid-footer__item-link--mail" href="#" target="_blank">whispers@cafe.cz</a></li>
+                        <li class="grid-footer__contact-item padding-bottom-XS"><a class="grid-footer__item-link grid-footer__item-link--messenger" href="#" target="_blank">Messenger</a></li>
+                    </ul>
+                </div>
+
+                <div class="grid-footer column-third padding-small">
+                    <h3 class="h3--color">Chutnalo Vám u nás?</h3>
+                    <p class="grid-footer__text margin0">Budeme rádi, když fotku, kterou jste u nás pořídili, označíte hashtagem <a href="#" target="_blank">#whisperscafe</a></p>
                 </div>
             </div>
-
-            <div class="grid-footer column-third padding-small">
-                <h3 class="h3--color">Kontaktujte nás</h3>
-                <ul class="grid-footer__contact-list margin0">
-                    <li class="grid-footer__contact-item padding-bottom-XS"><span class="grid-footer__item-link grid-footer__item-link--tel">+420 111 111 111</span></li>
-                    <li class="grid-footer__contact-item padding-bottom-XS"><a class="grid-footer__item-link grid-footer__item-link--mail" href="#" target="_blank">whispers@cafe.cz</a></li>
-                    <li class="grid-footer__contact-item padding-bottom-XS"><a class="grid-footer__item-link grid-footer__item-link--messenger" href="#" target="_blank">Messenger</a></li>
-                </ul>
-            </div>
-
-            <div class="grid-footer column-third padding-small">
-                <h3 class="h3--color">Chutnalo Vám u nás?</h3>
-                <p class="grid-footer__text margin0">Budeme rádi, když fotku, kterou jste u nás pořídili, označíte hashtagem <a href="#" target="_blank">#whisperscafe</a></p>
-           </div>
 
         </section>
 
