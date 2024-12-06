@@ -1,43 +1,7 @@
-<!DOCTYPE html>
-<html lang="cs-cz">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css_js/glide.core.min.css">
-    <link rel="stylesheet" href="css_js/glide.theme.min.css">
-
-    <title>Whispers café</title>
-
-</head>
-
-<body>
-
-    <header class="header">
-    
-        <img class="logo-image" src="images/logo.svg" alt="logo Whispers café" width="220" />
-
-        <nav class="menu">
-        
-            <input type="checkbox" class="menu__checkbox" id="menu-checkbox" />
-		    <label for="menu-checkbox" class="menu__toggler"><img src="images/hamburger-menu.svg" alt="rozbalovací menu" /></label>
-
-            <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="#">Domů</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Stálá nabídka</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Polední menu</a></li>
-                <li class="menu__item menu__item--highlight"><a class="menu__link menu__link--highlight" href="#">Rezervace</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Kontakt</a></li>
-            </ul>
-
-        </nav>
-
-    </header>
+---
+layout: main-template.njk
+title: Whispers café | Domů
+---
 
     <section class="hero padding-big">
 
@@ -148,8 +112,7 @@
             <script>
             new Glide('.glide', {
                 autoplay: 4000,
-                type: 'carousel',
-            
+                type: 'carousel'
             }
 
             ).mount()
@@ -194,40 +157,3 @@
         </section>
 
     </div>
-
-        <section class="footer-line-container margin0">
-        
-            <div class="grid-footer-wrapper padding-bottom-small content-width center">
-
-                <div class="grid-footer column-first padding-small">
-                    <h3 class="h3--color">Sledujte nás</h3>
-                    <div class="grid-footer__follow">
-                        <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/facebook.svg" alt="ikona Facebooku" width="44" height="44" /></a>
-                        <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/instagram.svg" alt="ikona Instagramu" width="44" height="44"/></a>
-                        <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="images/twitter.svg" alt="ikonka Twitteru" width="47" height="47" /></a>
-                    </div>
-                </div>
-
-                <div class="grid-footer column-second padding-small">
-                    <h3 class="h3--color">Kontaktujte nás</h3>
-                    <ul class="grid-footer__contact-list margin0">
-                        <li class="grid-footer__contact-item padding-bottom-XS"><span class="grid-footer__item-link grid-footer__item-link--tel">+420 111 111 111</span></li>
-                        <li class="grid-footer__contact-item padding-bottom-XS"><a class="grid-footer__item-link grid-footer__item-link--mail" href="#" target="_blank">whispers@cafe.cz</a></li>
-                        <li class="grid-footer__contact-item padding-bottom-XS"><a class="grid-footer__item-link grid-footer__item-link--messenger" href="#" target="_blank">Messenger</a></li>
-                    </ul>
-                </div>
-
-                <div class="grid-footer column-third padding-small">
-                    <h3 class="h3--color">Chutnalo Vám u nás?</h3>
-                    <p class="grid-footer__text margin0">Budeme rádi, když fotku, kterou jste u nás pořídili, označíte hashtagem <a href="#" target="_blank">#whisperscafe</a></p>
-                </div>
-            </div>
-
-        </section>
-
-        <footer class="main-footer">
-            <p class="main-footer__text margin0 padding-big">&copy;2024 whisperscafe.cz</p>
-        </footer>
- 
-</body>
-</html>
