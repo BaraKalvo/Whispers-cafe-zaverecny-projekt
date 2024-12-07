@@ -296,7 +296,7 @@ a {
 }
 @media screen and (min-width: 890px) {
   .info-line__text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -438,7 +438,7 @@ a {
   padding: 0;
 }
 .grid-footer__item-link {
-  padding-left: 1.5em;
+  padding-left: 1.3em;
   background-repeat: no-repeat;
   background-size: 1em 1em;
   background-position: left center;
@@ -446,11 +446,20 @@ a {
 .grid-footer__item-link--tel {
   background-image: url(./../images/telefon-contact.svg);
 }
+.grid-footer__item-link--tel-white {
+  background-image: url(./../images/telefon-contact-white.svg);
+}
 .grid-footer__item-link--mail {
   background-image: url(./../images/mail-contact.svg);
 }
+.grid-footer__item-link--mail-white {
+  background-image: url(./../images/mail-contact-white.svg);
+}
 .grid-footer__item-link--messenger {
   background-image: url(./../images/messenger-contact.svg);
+}
+.grid-footer__item-link--size {
+  font-size: 1.2rem;
 }
 .grid-footer__text {
   max-width: 300px;
@@ -482,6 +491,9 @@ a {
   background: #282425 url(./../images/strip-kontakt.jpg) no-repeat center/cover;
 }
 
+.wide-strip {
+  background-color: #FAFAFA;
+}
 .wide-strip__text {
   text-align: center;
 }
@@ -492,4 +504,56 @@ a {
 .content-container__text {
   font-weight: bold;
   color: #757575;
+}
+.content-container__text--color-text {
+  color: #282425;
+}
+.content-container__text--color-primary {
+  color: #6B856F;
+}
+
+@media screen and (min-width: 890px) {
+  .contact-wrapper {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.contact-box {
+  background-color: #757575;
+  border-radius: 3px;
+  text-align: center;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.contact-box__text {
+  color: white;
+}
+.contact-box__text--main {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.contact-box__link {
+  color: white;
+}
+.contact-box__variants {
+  background-color: #A0A0A0;
+  max-width: 200px;
+  border-radius: 3px;
+  margin: 20px auto;
+  padding: 5px;
+}
+@media screen and (min-width: 890px) {
+  .contact-box {
+    flex: 0 0 calc((100% - 30px) / 2);
+  }
+}
+
+.map {
+  max-width: 800px;
+  margin: 20px auto;
+}
+.map__photo {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

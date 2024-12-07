@@ -323,7 +323,7 @@ a {
         font-size: 1.1rem;
 
         @media screen and (min-width: 890px) {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
             
     }
@@ -489,7 +489,7 @@ a {
    }
 
    &__item-link {
-    padding-left: 1.5em;
+    padding-left: 1.3em;
     background-repeat: no-repeat;
     background-size: 1em 1em;
     background-position: left center;
@@ -498,13 +498,25 @@ a {
         background-image: url(./../images/telefon-contact.svg);
     }
 
+    &--tel-white {
+        background-image: url(./../images/telefon-contact-white.svg);
+    }
     &--mail {
         background-image: url(./../images/mail-contact.svg);
+    }
+
+    &--mail-white {
+        background-image: url(./../images/mail-contact-white.svg);
     }
 
     &--messenger {
         background-image: url(./../images/messenger-contact.svg);
     }
+
+    &--size {
+        font-size: 1.2rem;
+    }
+
    }
 
    &__text {
@@ -544,6 +556,7 @@ a {
 }
 
 .wide-strip {
+    background-color: $c-light;
 
     &__text {
         text-align: center;
@@ -552,9 +565,67 @@ a {
 
 .content-container {
     text-align: center;
-
+    
     &__text {
         font-weight: bold;
         color: $c-dark;
+    
+        &--color-text {
+            color: $c-text;
+        }
+
+        &--color-primary {
+            color: $c-primary;
+        }
+    }
+
+}
+.contact-wrapper {
+    
+    @media screen and (min-width: 890px) {
+        display: flex;
+        width: 100%;
+    }
+}
+.contact-box {
+    background-color: $c-dark;
+    border-radius: 3px;
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+
+    &__text {
+        color: white;
+        
+        &--main {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+    }
+
+    &__link {
+        color: white;
+    }
+
+    &__variants {
+        background-color: $c-secondary;
+        max-width: 200px;
+        border-radius: 3px;
+        margin: 20px auto;
+        padding: 5px;
+    }
+
+    @media screen and (min-width: 890px) {
+        flex: 0 0 calc((100% - 30px) / 2);
+    }
+}
+
+.map {
+    max-width: 800px;
+    margin: 20px auto;
+    
+    &__photo {
+        width: 100%;      
     }
 }
