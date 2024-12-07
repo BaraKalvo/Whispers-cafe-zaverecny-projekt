@@ -81,6 +81,10 @@ a {
 }
 .content-width {
     max-width: 1200px;
+
+    &--small {
+        max-width: 1000px;
+    }
 }
 
 .margin-small {
@@ -89,6 +93,10 @@ a {
 
 .margin-XS {
     margin: 5px 0;
+}
+
+.margin-left-XS {
+    margin-left: 5px;
 }
 
 .margin0 {
@@ -114,7 +122,6 @@ a {
     font-size: 0.9rem;
     color: $c-dark;
 }
-
 
 .header {
     display: flex;
@@ -290,6 +297,11 @@ a {
             background-color: $c-light;
             box-shadow: 2px 2px 1px $c-medium;
         }
+
+        &--small {
+            padding: 5px 10px;
+            font-size: 1rem;
+        }
     }
 
     &--size {
@@ -310,7 +322,7 @@ a {
         text-transform: uppercase;
         font-size: 1.1rem;
 
-        @media screen and (min-width: 590px) {
+        @media screen and (min-width: 890px) {
             font-size: 1.3rem;
         }
             
@@ -528,5 +540,21 @@ a {
 
     &--kontakt {
         background: $c-text url(./../images/strip-kontakt.jpg) no-repeat center/cover;
+    }
+}
+
+.wide-strip {
+
+    &__text {
+        text-align: center;
+    }
+}
+
+.content-container {
+    text-align: center;
+
+    &__text {
+        font-weight: bold;
+        color: $c-dark;
     }
 }

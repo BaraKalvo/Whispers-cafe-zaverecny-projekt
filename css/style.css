@@ -78,6 +78,9 @@ a {
 .content-width {
   max-width: 1200px;
 }
+.content-width--small {
+  max-width: 1000px;
+}
 
 .margin-small {
   margin: 20px 0;
@@ -85,6 +88,10 @@ a {
 
 .margin-XS {
   margin: 5px 0;
+}
+
+.margin-left-XS {
+  margin-left: 5px;
 }
 
 .margin0 {
@@ -268,6 +275,10 @@ a {
   background-color: #FAFAFA;
   box-shadow: 2px 2px 1px #D9D9D9;
 }
+.button__link--small {
+  padding: 5px 10px;
+  font-size: 1rem;
+}
 @media screen and (min-width: 890px) {
   .button--size {
     font-size: 1.4rem;
@@ -283,7 +294,7 @@ a {
   text-transform: uppercase;
   font-size: 1.1rem;
 }
-@media screen and (min-width: 590px) {
+@media screen and (min-width: 890px) {
   .info-line__text {
     font-size: 1.3rem;
   }
@@ -469,4 +480,16 @@ a {
 }
 .image-strip--kontakt {
   background: #282425 url(./../images/strip-kontakt.jpg) no-repeat center/cover;
+}
+
+.wide-strip__text {
+  text-align: center;
+}
+
+.content-container {
+  text-align: center;
+}
+.content-container__text {
+  font-weight: bold;
+  color: #757575;
 }/*# sourceMappingURL=style.css.map */

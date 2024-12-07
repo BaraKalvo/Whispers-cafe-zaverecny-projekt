@@ -11,8 +11,8 @@ title: Whispers café | Domů
         </div>
 
         <ul class="hero__buttons-wrapper">
-            <li class="button padding-bottom-small"><a class="button__link button--size" href="#">Rezervace</a></li>
-            <li class="button"><a class="button__link button--size" href="#">Naše nabídka</a></li>
+            <li class="button padding-bottom-small"><a class="button__link button--size" href="/rezervace">Rezervace</a></li>
+            <li class="button"><a class="button__link button--size" href="/nabidka">Naše nabídka</a></li>
         </ul>
 
     </section>
@@ -112,7 +112,13 @@ title: Whispers café | Domů
             <script>
             new Glide('.glide', {
                 autoplay: 4000,
-                type: 'carousel'
+                type: 'carousel',
+                breakpoints: {
+                    750: {perView: 1},
+                    1200: {perView: 2},
+                    5000: {perView: 3}
+                },
+                gap: 3
             }
 
             ).mount()
