@@ -20,7 +20,7 @@
 
     <header class="header">
     
-        <img class="logo-image" src="/images/logo.svg" alt="logo Whispers café" width="220" />
+        <a href="/"><img class="logo-image" src="/images/logo.svg" alt="logo Whispers café" width="220" /></a>
 
         <nav class="menu">
         
@@ -28,12 +28,12 @@
 		    <label for="menu-checkbox" class="menu__toggler"><img src="/images/hamburger-menu.svg" alt="rozbalovací menu" /></label>
 
             <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="/">Domů</a></li>
-                <li class="menu__item"><a class="menu__link" href="/nabidka">Stálá nabídka</a></li>
-                <li class="menu__item"><a class="menu__link" href="/menu">Polední menu</a></li>
-                <li class="menu__item"><a class="menu__link" href="/quiet-zone">Quiet zone</a></li>
-                <li class="menu__item menu__item--highlight"><a class="menu__link menu__link--highlight" href="/rezervace">Rezervace</a></li>
-                <li class="menu__item"><a class="menu__link" href="/kontakt">Kontakt</a></li>
+                <li class="menu__item"><a class="menu__link {{ 'menu__link--active' if page.fileSlug === ''}}" href="/">Domů</a></li>
+                <li class="menu__item"><a class="menu__link {{ 'menu__link--active' if page.fileSlug === 'nabidka'}}" href="/nabidka">Stálá nabídka</a></li>
+                <li class="menu__item"><a class="menu__link {{ 'menu__link--active' if page.fileSlug === 'menu'}}" href="/menu">Polední menu</a></li>
+                <li class="menu__item"><a class="menu__link {{ 'menu__link--active' if page.fileSlug === 'quiet-zone'}}" href="/quiet-zone">Quiet zone</a></li>
+                <li class="menu__item"><a class="menu__link menu__link--highlight {{ 'menu__link--active' if page.fileSlug === 'rezervace'}}" href="/rezervace">Rezervace</a></li>
+                <li class="menu__item"><a class="menu__link {{ 'menu__link--active' if page.fileSlug === 'kontakt'}}" href="/kontakt">Kontakt</a></li>
             </ul>
 
         </nav>
@@ -51,9 +51,9 @@
             <div class="grid-footer column-first padding-small">
                 <h3 class="h3--color">Sledujte nás</h3>
                 <div class="grid-footer__follow">
-                    <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="/images/facebook.svg" alt="ikona Facebooku" width="44" height="44" /></a>
-                    <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="/images/instagram.svg" alt="ikona Instagramu" width="44" height="44"/></a>
-                    <a class="grid-footer__icon" href="#" target="_blank"><img class="grid-footer__image" src="/images/twitter.svg" alt="ikonka Twitteru" width="47" height="47" /></a>
+                    <a class="grid-footer__icon" href="https://www.facebook.com/" target="_blank"><img class="grid-footer__image" src="/images/facebook.svg" alt="ikona Facebooku" width="44" height="44" /></a>
+                    <a class="grid-footer__icon" href="https://www.instagram.com/" target="_blank"><img class="grid-footer__image" src="/images/instagram.svg" alt="ikona Instagramu" width="44" height="44"/></a>
+                    <a class="grid-footer__icon" href="https://x.com/?lang=cs" target="_blank"><img class="grid-footer__image" src="/images/twitter.svg" alt="ikonka Twitteru" width="47" height="47" /></a>
                 </div>
             </div>
 
@@ -61,14 +61,14 @@
                 <h3 class="h3--color">Kontaktujte nás</h3>
                 <ul class="grid-footer__contact-list margin0">
                     <li class="grid-footer__contact-item padding-bottom-XS"><span class="grid-footer__item-link grid-footer__item-link--tel">+420 111 111 111</span></li>
-                    <li class="grid-footer__contact-item padding-bottom-XS"><a class="grid-footer__item-link grid-footer__item-link--mail" href="#" target="_blank">whispers@cafe.cz</a></li>
-                    <li class="grid-footer__contact-item padding-bottom-XS"><a class="grid-footer__item-link grid-footer__item-link--messenger" href="#" target="_blank">Messenger</a></li>
+                    <li class="grid-footer__contact-item padding-bottom-XS"><a class="grid-footer__item-link grid-footer__item-link--mail" href="mailto:whispers@cafe.cz" target="_blank">whispers@cafe.cz</a></li>
+                    <li class="grid-footer__contact-item padding-bottom-XS"><a class="grid-footer__item-link grid-footer__item-link--messenger" href="https://www.messenger.com/?locale=cs_CZ" target="_blank">Messenger</a></li>
                 </ul>
             </div>
 
             <div class="grid-footer column-third padding-small">
                 <h3 class="h3--color">Chutnalo Vám u nás?</h3>
-                <p class="grid-footer__text margin0">Budeme rádi, když fotku, kterou jste u nás pořídili, označíte hashtagem <a href="#" target="_blank">#whisperscafe</a></p>
+                <p class="grid-footer__text margin0">Budeme rádi, když fotku, kterou jste u nás pořídili, označíte hashtagem <a href="https://www.instagram.com/" target="_blank">#whisperscafe</a></p>
             </div>
         </div>
 

@@ -28,7 +28,7 @@ běžný text: 16px (výchozí);
 $c-primary: #6B856F;
 $c-secondary: #A0A0A0;
 $c-light: #FAFAFA;
-$c-medium: #D9D9D9;
+$c-medium: #d9d9d9;
 $c-dark: #757575;
 $c-text: #282425;
 
@@ -87,6 +87,10 @@ a {
     }
 }
 
+.margin-big {
+    margin: 30px;
+}
+
 .margin-small {
     margin: 20px 0;
 }
@@ -121,6 +125,10 @@ a {
 .text-small {
     font-size: 0.9rem;
     color: $c-dark;
+
+    &--color {
+        color: $c-text;
+    }
 }
 
 .header {
@@ -168,13 +176,6 @@ a {
             border-right: 2px solid white;
         }
 
-        &--highlight {
-
-            @media screen and (min-width: 920px) {
-                border: 2px solid $c-secondary;
-                border-radius: 3px;
-            }
-        }
     }
 
     &__link {
@@ -191,7 +192,8 @@ a {
 
         &:hover,
         &:focus,
-        &:active {
+        &:active,
+        &--active {
             background-color: $c-medium;
 
             @media screen and (min-width: 920px) {
@@ -301,6 +303,11 @@ a {
         &--small {
             padding: 5px 10px;
             font-size: 1rem;
+        }
+
+        &--form {
+            border-color: $c-medium;
+            background-color: $c-light;
         }
     }
 
@@ -627,5 +634,60 @@ a {
     
     &__photo {
         width: 100%;      
+    }
+}
+
+.banner-container {
+    background: url(./../images/content-menu.jpg) no-repeat center/cover;
+    border-radius: 30px;
+    padding: 50px;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.banner {
+    text-align: center;
+    background-color: rgba(217, 217, 217, 0.6);
+    border-radius: 30px;
+    padding: 20px 20px;
+    line-height: 0.8;
+
+    &__text {
+        font-weight: bold;
+    }
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+
+    &__item {
+        margin-bottom: 15px;
+    }
+
+    &__label {
+        display: block;
+        color: $c-dark;
+
+        &--position {
+            display: inline;
+        }
+
+        &--color {
+            color: $c-text;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        border: 1px solid $c-medium;
+        border-radius: 3px;
+        padding: 5px;
+        font-size: 1rem;
+        background-color: $c-light;
+        font-family: $font-base;
+        font-optical-sizing: auto;
+        color: black;
     }
 }

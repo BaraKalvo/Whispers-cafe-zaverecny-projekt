@@ -11,6 +11,63 @@ title: Whispers | Rezervace
 
         <p class="wide-strip__text padding-bottom-XS content-container__text content-container__text--color-text">Jestliže si místo rezervujete alespoň 24 hodin předem, můžete využít náš <span class="content-container__text--color-primary">rezervační formulář</span> níže.</p>
 
-        <p class="wide-strip__text padding-bottom-XS content-container__text content-container__text--color-primary">Pokud si přejete rezervovat místo přímo v naší <span class="content-container__text--color-text">quiet zone</span>, uveďte prosím do kolonky quiet zone <span class="content-container__text--color-text">ANO.</span></p>
+        <p class="wide-strip__text padding-bottom-XS content-container__text content-container__text--color-primary">Pokud si přejete rezervovat místo přímo v naší <span class="content-container__text--color-text">quiet zone,</span> uveďte prosím do kolonky quiet zone <span class="content-container__text--color-text">ANO.</span></p>
     </div>
 </section>
+
+<form class="form" action="https://submit-form.com/OmHC9Qee4" method="post">
+
+    <div class="form__item">
+        <label class="form__label" for="jmeno">Jméno a příjmení*</label>
+        <input class="form__input" type="text" name="jmeno" id="jmeno" autofocus required />
+    </div>
+
+    <div class="form__item">
+        <label class="form__label" for="email">E-mail*</label>
+        <input class="form__input" type="email" name="email" id="email" required />
+    </div>
+
+    <div class="form__item">
+        <label class="form__label" for="telefon">Telefon*</label>
+        <input class="form__input" type="tel" name="telefon" id="telefon" />
+    </div>
+
+    <div class="form__item">
+        <label class="form__label" for="pocet-osob">Počet osob*</label>
+        <input class="form__input" type="number" name="pocet-osob" id="pocet-osob" min="1" required />
+    </div>
+
+    <div class="form__item">
+        <label class="form__label" for="datum">Datum*</label>
+        <input class="form__input" type="date" name="datum" id="datum" required />
+    </div>
+    
+    <div class="form__item">
+        <label class="form__label" for="cas">Čas*</label>
+        <input class="form__input" type="time" name="cas" id="cas" required />
+    </div>
+
+    <div class="form__item">
+        <label class="form__label" for="quiet-zone">Quiet zone*</label>
+        <select class="form__input" name="quiet-zone" id="quiet-zone" required>
+            <option></option>
+            <option>ano</option>
+            <option>ne</option>
+        </select> 
+    </div>
+
+    <div class="form__item">
+        <label class="form__label" for="poznamka">Poznámka</label>
+        <textarea class="form__input" name="poznamka" id="poznamka" cols="60" rows="5"></textarea>
+    </div>
+
+    <div class="form__item">
+        <input type="checkbox" name="souhlas" id="souhlas" value="ano" required />
+        <label class="form__label form__label--position form__label--color" for="souhlas">Souhlasím se zpracováním osobních údajů</label>
+    </div>
+
+    <div class="form__item">
+        <button class="button__link button__link--small button__link--form" type="submit">Odeslat</button>
+    </div>
+
+</form>
